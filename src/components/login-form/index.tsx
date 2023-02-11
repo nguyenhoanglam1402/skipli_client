@@ -32,7 +32,7 @@ const LoginForm = () => {
                onChange={onOTPChange} placeholder="OTP" />
         <div className="flex flex-row gap-5 justify-center">
           <button className="text-blue-600 font-semibold" type="button" onClick={getOTP}>Get OTP</button>
-          <button className="font-semibold" type="submit">Submit</button>
+          {otp.length === 6 && <button className="font-semibold" type="submit">Submit</button>}
         </div>
       </form>
     </div>

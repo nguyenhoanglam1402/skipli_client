@@ -1,16 +1,15 @@
 # Project Structure
 
 _**src**_ - source code structure folder
-**_component_** - contains the component of web application
-_**page**_ - contains the page of web application
-_**routes**_ - contains the route of web application
-**_services_** - contain the service to connect to api
 
-# Getting Started with Create React App
+* **_component_** - contains the component of web application
+* _**page**_ - contains the page of web application
+* _**routes**_ - contains the route of web application
+* **_services_** - contain the service to connect to api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Screenshot**: https://drive.google.com/drive/folders/1Ked8eINdpAnKU2RyZjCuL2dbxZYSnobY?usp=sharing
 
-## Available Scripts
+## Available Scripts to run the project
 
 In the project directory, you can run:
 
