@@ -1,14 +1,17 @@
 import { ChangeEvent, useState } from "react";
 import { createNewOTP, validateOTP } from "../../services/accessCode.services";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
+  const navigate = useNavigate();
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     const response = await validateOTP({ phoneNumber, otp });
     if (response.status === 200) {
       localStorage.setItem("phoneNumber", phoneNumber);
+      navigate("/");
     }
   };
 
